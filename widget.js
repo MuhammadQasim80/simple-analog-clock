@@ -60,7 +60,7 @@ const clock = (function () {
    * @param {Number} hourAngle is the initial angle (position within the circle) for HOUR clock hand
    * @param {Number} minuteAngle is the initial angle (position within the circle) for MINUTE clock hand
    * @param {Number} secondAngle is the initial angle (position within the circle) for SECOND clock hand
-   * @returns {SET_INTERVAL} that will update clock hands (HOUR, MINUTE, SECOND) after each second
+   * @starts {SET_INTERVAL} that will update clock hands (HOUR, MINUTE, SECOND) after each second
    */
   const spinClockHands = (hourAngle, minuteAngle, secondAngle) => {
     if (intervalId) {
