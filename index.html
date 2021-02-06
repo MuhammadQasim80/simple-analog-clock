@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./widget.css" />
   </head>
   <body onload="start()">
+    <div>
+      <input type="button" value="Show Clock" onclick="clock.showCurrentTime();" />
+      <input type="button" value="Start Timer" onclick="clock.startTimer();" />
+    </div>
     <div class="clock-container">
       <svg width="400" height="400">
         <circle
@@ -50,10 +54,5 @@
       </svg>
     </div>
     <script src="./widget.js"></script>
-    <script>
-      function start() {
-        clock.showTime();
-      }
-    </script>
   </body>
 </html>
