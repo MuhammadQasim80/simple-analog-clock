@@ -6,6 +6,6 @@ This project is a practicaly demonstration of making an analog clock using simpl
 
 To show the current time, press `Show Clock` button
 
-## Show current time
+## Start timer
 
 To show the timer, press `Start Timer` button.
