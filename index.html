@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Analog clock</title>
+    <link rel="stylesheet" href="./widget.css" />
+  </head>
+  <body onload="start()">
+    <div class="clock-container">
+      <svg width="400" height="400">
+        <circle
+          cx="100"
+          cy="100"
+          r="80"
+          fill="none"
+          stroke="#000000"
+          stroke-width="1"
+        />
+        <line
+          id="second-hand"
+          x1="100"
+          y1="100"
+          x2="100"
+          y2="20"
+          stroke-width="1"
+          stroke="#00ff00"
+          style="transform-origin: 100px 100px"
+        />
+        <line
+          id="minute-hand"
+          x1="100"
+          y1="100"
+          x2="100"
+          y2="30"
+          stroke-width="1"
+          stroke="#ff0000"
+          style="transform-origin: 100px 100px"
+        />
+        <line
+          id="hour-hand"
+          x1="100"
+          y1="100"
+          x2="100"
+          y2="50"
+          stroke-width="1"
+          stroke="#0000ff"
+          style="transform-origin: 100px 100px"
+        />
+      </svg>
+    </div>
+    <script src="./widget.js"></script>
+    <script>
+      function start() {
+        clock.showTime();
+      }
+    </script>
+  </body>
+</html>
